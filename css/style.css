@@ -1,0 +1,98 @@
+
+.background{
+    position: relative;
+    width: 1300px;
+    height: 800px;
+}
+.cloud {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: cloudmove 10s infinite;
+    z-index: 5;
+}
+.cloud2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    animation: cloudmove2 10s infinite;
+    z-index: 6;
+}
+.cloud3{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    animation: cloudmove3 10s infinite;
+    z-index: 9;
+    /* transform: translate(-50%,-50%); */
+}
+
+.moon{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: moonmove 10s infinite;
+    z-index:4 ;
+}
+
+.girl{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: girlmove 10s infinite;
+    z-index: 7;
+}
+/* .cat{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index:30;
+    animation:  3s infinite;
+} */
+/* keyframes */
+@keyframes cloudmove {
+    from{left: 0px;}
+    to{left: 300px;}
+}
+@keyframes cloudmove2 {
+    from{right: 0px; }
+    to {right: 300px;}
+}
+@keyframes moonmove {
+    from{left: 400px; top:400px}
+    to {left:400px ; top: 100px;}
+}
+/* @keyframes girlmove {
+    from{right: 20px;top: 250px;}
+    to{right: 800px;top: 250px; opacity: 0;}
+} */
+@keyframes cloudmove3{
+    from{left: 0px; top: 120px;}
+    to{left:400px;top: 120px;}
+}
+@keyframes cloudmove4{
+    from{left: 0px; top: 200px;}
+    to{left: 1000px;top: 200px;}
+}
+@keyframes girlmove {
+    0%   {top: 300px; right: 20px; }
+    75%  {top: 300px; right: 600px; opacity: 0.9; }
+    100% {top: 300px; right: 800px; opacity: 0;}
+  }
+/* basic */
+
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+  }
+
+  @keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+  }  
